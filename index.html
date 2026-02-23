@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Imran Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#111;
+    color:white;
+}
+
+/* Navbar */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 50px;
+    background:#000;
+    position:sticky;
+    top:0;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#00ffff;
+}
+
+.logo{
+    color:#00ffff;
+    cursor: pointer;
+}
+
+/* Sections */
+.section{
+    padding:80px 20px;
+    text-align:center;
+    animation:fadeIn 1.5s ease;
+}
+
+h2{
+    margin-bottom:20px;
+    color:#00ffff;
+}
+
+/* Button */
+button{
+    padding:10px 20px;
+    border:none;
+    background:#00ffff;
+    color:black;
+    cursor:pointer;
+    margin-top:15px;
+    transition:0.3s;
+}
+
+button:hover{
+    background:white;
+}
+.skill:hover{
+    background-color: #00ffff;
+    cursor: pointer;
+
+}
+/* Skills */
+.skill-box{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.skill-box div{
+    background:#222;
+    padding:15px 30px;
+    border-radius:5px;
+}
+
+/* Projects */
+.project-container{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.project-card{
+    background:#222;
+    padding:30px;
+    width:200px;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.project-card:hover{
+    transform:scale(1.05);
+    background:#00ffff;
+    color:black;
+    cursor: pointer;
+}
+
+/* Animation */
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* Responsive */
+@media(max-width:768px){
+    nav{
+        flex-direction:column;
+    }
+
+    nav ul{
+        flex-direction:column;
+        margin-top:10px;
+    }
+
+    nav ul li{
+        margin:10px 0;
+    }
+}
+.social-links{
+    margin-top:15px;
+}
+
+.social-links a{
+    display:inline-block;
+    margin:10px;
+    padding:10px 20px;
+    background:#00ffff;
+    color:black;
+    text-decoration:none;
+    border-radius:5px;
+    transition:0.3s;
+}
+
+.social-links a:hover{
+    background:white;
+}
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <h2 class="logo">Imran</h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home -->
+    <section id="home" class="section">
+        <h1>Hi, I'm Md Imran Faruqui</h1>
+        <p>Frontend Web Developer</p>
+        <button>Hire Me</button>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>Motivated first year B.Tech computer science student at Medhavi Skills University with strong interest in web development,programming and video editing.</p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+        <h2>My Skills</h2>
+        <div class="skill-box">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">Java</div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="project-container">
+            <div class="project-card"><a href="https://imranfaruqui34-stack.github.io/calculator/">Calculator</a></div>
+            <div class="project-card"><a href="https://imranfaruqui34-stack.github.io/Netflix-Landing-Page-/">Landing Page</a></div>
+            <div class="project-card"><a href="https://imranfaruqui34-stack.github.io/Loginform/">Registration Form</a></div>
+            <div class="project-card"><a href="https://imranfaruqui34-stack.github.io/food--delivery/">Basic Food Delivery</a></div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+   <!-- Contact -->
+<section id="contact" class="section">
+    <h2>Contact Me</h2>
+    
+    <p>Email: faruqimran025@gmail.com</p>
+    <p>Contact: 7061638034</p>
+
+    <div class="social-links">
+        <a href="https://www.linkedin.com/in/md-imran-faruqui-163932381" target="_blank">
+            LinkedIn
+        </a>
+
+        <a href="https://github.com/imranfaruqui34-stack" target="_blank">
+            GitHub
+        </a>
+    </div>
+</section>
+
+</body>
+</html>
